@@ -1,3 +1,20 @@
+Football Quiz:
+
+This football quiz is for football fans to test their knowledge of football. There are a whole host of questions about the Premier League and its clubs, the Champions League the World Cup and European Cup.
+
+The game has been designed to mimic the structure of a football tournament, for example, the World Cup or the Champions League. 
+
+This means the first round is based on the group stages, where there will be 6 questions (one question to be the equivalent to 1 match). For every correct question the user will score three points. In order to progress to the knockout stages of the tournament, the user needds to achieve 9 points (3 correct answers).
+
+The next stage of the game will be the knockout stage, if you give an incorrect answer, then you are out. There are 3 knockout questions, which is the equivalent to the quarter final, semi final and then final. 
+
+
+User Stories:
+
+
+Features:
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome edwardgurney,
