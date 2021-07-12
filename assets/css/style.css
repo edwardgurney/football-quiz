@@ -11,20 +11,23 @@ body {
 }
 
 #question {
-    width: 100%;
+    width: 80%;
     display: flex;
     font-size: 5rem;
     justify-content: center;
     align-items: center;
     padding: 0;
     margin: 0 auto;
+    margin-top: 20%;
+    border: solid;
+    background-color: cornsilk;
 }
 
 
 .game-area {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -46,10 +49,28 @@ body {
     margin: 10;
 }
 
+/*#timer {
+    display: flex;
+    width: 180vw;
+    height: 0vh;
+    padding: 0;
+    margin: 0;
+}
+
+#qualifying {
+    display: flex;
+    width: 180vw;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}/*
+
 /*Buttons*/
 
 .answer-button {
-    padding: 2rem;
+    padding: 3rem;
     margin: 2rem;
     border: 0.2rem solid;
     background-color:cornsilk;
@@ -60,4 +81,14 @@ body {
     cursor: pointer;
     color:dodgerblue;
     transition: transform 150ms;
+}
+
+.scores-area {
+    padding: 3rem;
+    margin: 2rem;
+    border: 0.2rem solid;
+    background-color:cornsilk;
+    width: 80vw;
+    height: 3vh;
+    text-align: center;
 }
