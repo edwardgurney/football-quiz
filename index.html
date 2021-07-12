@@ -9,33 +9,45 @@
     <title>Football Quiz</title>
 </head>
 <body>
-    <div id="timer">
+
+    <div id="game-area" class="container">
+        <div id="timer">
+
+        </div>
+
+        <div id="qualifying-points">
+
+        </div>
+
+        <div id="question">This is where the question will appear</div>
+
+        <div class="game-area">
+            <div id="questions-area"></div>
+                <div id="answer-buttons" class="button-grid"></div>
+                    <button class="answer-button">Choice A</button>
+                    <button class="answer-button">Choice B</button>
+                    <button class="answer-button">Choice C</button>
+                    <button class="answer-button">Choice D</button>
+    
+        </div>
+    
+        <div class="timer-points-area">
+    
+        </div>
+    
+        <div class="scores-area">
+            <p class="scores">Correct Answers <span id="correct-score">0</span></p>
+            <p class="scores">Incorrect Answers <span id="incorrect-score">0</span></p>
+        </div>
+
 
     </div>
+    
 
-    <div id="qualifying-points">
 
-    </div>
 
-    <div class="game-area">
-        <div id="questions-area"></div>
-            <div id="question">This is a question?</div>
-            <div id="answer-buttons" class="button-grid"></div>
-                <button class="answer-button">Choice A</button>
-                <button class="answer-button">Choice B</button>
-                <button class="answer-button">Choice C</button>
-                <button class="answer-button">Choice D</button>
 
-    </div>
 
-    <div class="timer-points-area">
-
-    </div>
-
-    <div class="scores-area">
-        <p class="scores">Correct Answers <span id="correct-score">0</span></p>
-        <p class="scores">Incorrect Answers <span id="incorrect-score">0</span></p>
-    </div>
     
     <script src="assets/js/script.js"></script>
 </body>

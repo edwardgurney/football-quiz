@@ -3,12 +3,23 @@
 }
 
 body {
-    font-family:Roboto, Georgia, 'Times New Roman', Times,
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
 }
 
 #question {
     width: 100%;
+    display: flex;
+    font-size: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
 }
+
 
 .game-area {
     display: flex;
