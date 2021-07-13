@@ -10,6 +10,54 @@ body {
     
 }
 
+.title {
+    width: 80%;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 10%;
+    border: solid;
+    background-color: cornsilk;
+}
+
+.instruction-text-box {
+    width: 80%;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 5%;
+    border: solid;
+    background-color: cornsilk;
+}
+
+#enter-team-name {
+    margin-top: 10%;
+    
+}
+
+#start-game {
+    margin-top: 10%;
+}
+
+/*Button on the homepage*/
+.button {
+    text-decoration: none;
+    width: 20rem;
+    padding: 1rem;
+    text-align: center;
+    color: orangered;
+    border: 0.1rem solid;
+    
+
+}
+
+/* This is the quiz/game page*/
+
 #question {
     width: 80%;
     display: flex;
@@ -49,23 +97,25 @@ body {
     margin: 10;
 }
 
-/*#timer {
+#timer {
     display: flex;
-    width: 180vw;
-    height: 0vh;
+    width: 10vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     margin: 0;
 }
 
 #qualifying {
     display: flex;
-    width: 180vw;
-    height: 5vh;
+    width: 10vw;
+    height: 10vh;
     justify-content: center;
     align-items: center;
     padding: 0;
     margin: 0;
-}/*
+}
 
 /*Buttons*/
 
