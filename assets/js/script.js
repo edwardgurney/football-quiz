@@ -1,3 +1,5 @@
+let question = document.getElementById("question");
+
 let qualifyingPoints = document.getElementById("qualifying-points");
 
 
