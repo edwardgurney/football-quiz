@@ -14,34 +14,7 @@ let questionsArray = [];
 let currentQuestion = {};
 let totalQuestions = document.getElementById("question-counter");
 let score = document.getElementById("correct-score");
-
-/*let quizQuestions = [
-    {
-        question: "Who was the goalkeeper when David Beckham scored from the halfway line for Manchester United against Wimbledon?",
-        choice1: "Shaka Hislop",
-        choice2: "Neil Sullivan",
-        choice3: "David James",
-        choice4: "David Seaman",
-        answer: 2,
-    },
-]
-
-
-/*window.addEventListener('DOMContentLoaded', (event) => {
-    console.log('DOM fully loaded and parsed');
-    let buttons = document.getElementsByTagName("button");
-
-    for (let button of buttons) {
-        button.addEventListener("click", function() {
-            if (this.getAttribute("data-type") === "1") {
-                alert("This is working");
-            } else {
-                alert("Not working");
-            }
-        });
-    }
-})
-*/
+let maxQuestions = 9;
 
  window.addEventListener("DOMContentLoaded", function() {
      let buttons = document.getElementsByTagName("button");
@@ -73,7 +46,9 @@ function newgame() {
 newgame();
 
 function displayNewQuestion() {
-    
+    if (questionsArray.length === 0 || questionCounter >= maxQuestions) {
+        return window.location.assign("index.html");
+    }
     questionCounter++;
     const questionsAvailable = Math.floor(Math.random() * questionsArray.length);
     currentQuestion = questionsArray[questionsAvailable];
@@ -91,6 +66,14 @@ selectedAnswer.forEach(choice => {
     choice.addEventListener("click", e => {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
+
+       /* const classToApply = 'incorrect';
+            if (selectedAnswer == currentQuestion.answer) {
+                classToApply = 'correct';
+                
+            }*/
+        
+       console.log(selectedAnswer == currentQuestion.answer);
 
         displayNewQuestion(); 
     });
@@ -110,4 +93,9 @@ function correctScore() {
 
 function incorrectScore() {
 
+}
+
+function qualifyingPointsScore () {
+    qualifyingPoints = parseInt(document.getElementById("qualifying-points").innerText);
+    document.getElementById("qualifying-points").innerText = ++ qualifying-points;
 }
