@@ -18,7 +18,7 @@ const quizQuestions = [
     },
 
     {
-        question: "Who is the Premier Leagues all time top scorer (260 goals)?",
+        question: "Who is the Premier League's all time top scorer (260 goals)?",
         choice1: "Andy Cole",
         choice2: "Sergio Aguero",
         choice3: "Alan Shearer",
