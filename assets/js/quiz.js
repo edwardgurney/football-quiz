@@ -72,7 +72,8 @@ function newgame() {
 
 newgame();
 
-function displayNewQuestion(params) {
+function displayNewQuestion() {
+    
     questionCounter++;
     const questionsAvailable = Math.floor(Math.random() * questionsArray.length);
     currentQuestion = questionsArray[questionsAvailable];
@@ -82,8 +83,18 @@ function displayNewQuestion(params) {
         const number = choice.dataset.number;
         choice.innerText = currentQuestion['choice' + number];
     });
+    questionsArray.splice(questionsAvailable, 1);
     
 };
+
+selectedAnswer.forEach(choice => {
+    choice.addEventListener("click", e => {
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset["number"];
+
+        displayNewQuestion(); 
+    });
+});
 
 function checkAnswer(params) {
     
