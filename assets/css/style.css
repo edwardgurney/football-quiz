@@ -174,3 +174,12 @@ body {
     border: solid;
     background-color: cornsilk;
 }
+
+.correct-answer {
+    background-color: chartreuse;
+}
+
+
+.incorrect-answer {
+    background-color: crimson;
+}

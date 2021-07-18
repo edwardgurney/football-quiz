@@ -16,22 +16,22 @@ let totalQuestions = document.getElementById("question-counter");
 let score = document.getElementById("correct-score");
 let maxQuestions = 9;
 
- window.addEventListener("DOMContentLoaded", function() {
-     let buttons = document.getElementsByTagName("button");
+//  window.addEventListener("DOMContentLoaded", function() {
+//      let buttons = document.getElementsByTagName("button");
 
-     for (let button of buttons) {
-         button.addEventListener("click", function(event) {
+//      for (let button of buttons) {
+//          button.addEventListener("click", function(event) {
              
-            console.log(event.target.dataset.type)
+//             console.log(event.target.dataset.type)
 
-             if (this.getAttribute("data-type") === "1") {
-                 alert("This is working");
-             } else {
-                 alert("Not working");
-             }
-         });
-     }
- });
+//              if (this.getAttribute("data-type") === "1") {
+//                  alert("This is working");
+//              } else {
+//                  alert("Not working");
+//              }
+//          });
+//      }
+//  });
 
 /*when "start new game - kick off" button clicked*/
 
@@ -47,6 +47,7 @@ newgame();
 
 function displayNewQuestion() {
     if (questionsArray.length === 0 || questionCounter >= maxQuestions) {
+        
         return window.location.assign("index.html");
     }
     questionCounter++;
@@ -61,21 +62,27 @@ function displayNewQuestion() {
     questionsArray.splice(questionsAvailable, 1);
     
 };
-
 selectedAnswer.forEach(choice => {
     choice.addEventListener("click", e => {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
 
-       /* const classToApply = 'incorrect';
-            if (selectedAnswer == currentQuestion.answer) {
-                classToApply = 'correct';
-                
-            }*/
+        let classToApply = 'incorrect-answer';
+        if (selectedAnswer == currentQuestion.answer) {
+            classToApply = 'correct-answer';
         
-       console.log(selectedAnswer == currentQuestion.answer);
+            /*selectedChoice.parentElement.classList.add(classToApply);*/
+        }
 
-        displayNewQuestion(); 
+        console.log(selectedAnswer == currentQuestion.answer);
+
+        // 1. if answer is incorrect - add the classToApply here
+        selectedChoice.classList.add(classToApply);
+        setTimeout(() => {
+            // 2. remove the classToApply from the classList (.......classList.remove(classToApply))
+            selectedChoice.classList.remove(classToApply);    
+            displayNewQuestion();
+        }, 1500);
     });
 });
 
