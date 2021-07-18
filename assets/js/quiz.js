@@ -3,10 +3,10 @@ const selectedAnswer = Array.from(document.getElementsByClassName("answer-button
 
 
 let qualifyingPoints = 0;
-let timer = document.getElementsByClassName("countdown");
+let timer = 60;  //document.getElementsByClassName("countdown");
 let startGame = document.getElementsByClassName("button");
 let correctAnswers = 0;
-let incorrectAnswers = document.getElementById("incorrect-score");
+let incorrectAnswers = 0; //document.getElementById("incorrect-score");
 let answerButtons = document.getElementsByClassName("answer-button"); 
 let questionCounter = 0;
 let questionArea = document.getElementById("question");
@@ -42,9 +42,12 @@ function newgame() {
     questionsArray = [...quizQuestions];
     console.log(questionsArray);
     displayNewQuestion();
+
 }
 
 newgame();
+
+
 
 function displayNewQuestion() {
     if (questionsArray.length === 0 || questionCounter >= maxQuestions) {
@@ -75,11 +78,8 @@ selectedAnswer.forEach(choice => {
             qualifyingPointsScore ();
             correctScore ();
             classToApply = 'correct-answer';
-            
-            
-            
-            
-        
+        } else {
+            incorrectScore();
             /*selectedChoice.parentElement.classList.add(classToApply);*/
         }
 
@@ -95,6 +95,7 @@ selectedAnswer.forEach(choice => {
         }, 1500);
     });
 });
+
 
 
 
