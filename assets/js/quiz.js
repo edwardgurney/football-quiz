@@ -5,7 +5,7 @@ const selectedAnswer = Array.from(document.getElementsByClassName("answer-button
 let qualifyingPoints = 0;
 let timer = document.getElementsByClassName("countdown");
 let startGame = document.getElementsByClassName("button");
-let correctAnswers = document.getElementById("correct-score");
+let correctAnswers = 0;
 let incorrectAnswers = document.getElementById("incorrect-score");
 let answerButtons = document.getElementsByClassName("answer-button"); 
 let questionCounter = 0;
@@ -15,6 +15,7 @@ let currentQuestion = {};
 let totalQuestions = document.getElementById("question-counter");
 let score = document.getElementById("correct-score");
 let maxQuestions = 9;
+
 
 //  window.addEventListener("DOMContentLoaded", function() {
 //      let buttons = document.getElementsByTagName("button");
@@ -36,8 +37,8 @@ let maxQuestions = 9;
 /*when "start new game - kick off" button clicked*/
 
 function newgame() {
-    questionCounter.innerText = 1;
-    score.innerText = 1;
+    questionCounter.innerText = 0;
+    score.innerText = 0;
     questionsArray = [...quizQuestions];
     console.log(questionsArray);
     displayNewQuestion();
@@ -62,6 +63,8 @@ function displayNewQuestion() {
     questionsArray.splice(questionsAvailable, 1);
     
 };
+
+
 selectedAnswer.forEach(choice => {
     choice.addEventListener("click", e => {
         const selectedChoice = e.target;
@@ -69,7 +72,13 @@ selectedAnswer.forEach(choice => {
 
         let classToApply = 'incorrect-answer';
         if (selectedAnswer == currentQuestion.answer) {
+            qualifyingPointsScore ();
+            correctScore ();
             classToApply = 'correct-answer';
+            
+            
+            
+            
         
             /*selectedChoice.parentElement.classList.add(classToApply);*/
         }
@@ -78,6 +87,7 @@ selectedAnswer.forEach(choice => {
 
         // 1. if answer is incorrect - add the classToApply here
         selectedChoice.classList.add(classToApply);
+        
         setTimeout(() => {
             // 2. remove the classToApply from the classList (.......classList.remove(classToApply))
             selectedChoice.classList.remove(classToApply);    
@@ -86,23 +96,28 @@ selectedAnswer.forEach(choice => {
     });
 });
 
-function checkAnswer(params) {
-    
-}
+
 
 function gameOver() {
 
 }
 
-function correctScore() {
-
+function correctScore () {
+    correctAnswers += 1;
+    document.getElementById("correct-score").innerText = correctAnswers;
 }
 
-function incorrectScore() {
-
+function incorrectScore () {
+    incorrectAnswers += 1;
+    document.getElementById("incorrect-score").innerText = incorrectAnswers;
 }
 
 function qualifyingPointsScore () {
-    qualifyingPoints = parseInt(document.getElementById("qualifying-points").innerText);
-    document.getElementById("qualifying-points").innerText = ++ qualifying-points;
+    qualifyingPoints += 3;
+    document.getElementById("qualifying-points").innerText = qualifyingPoints;
+}
+
+
+function progressToKnockout () {
+
 }
