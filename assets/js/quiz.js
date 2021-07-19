@@ -3,6 +3,8 @@ const selectedAnswer = Array.from(document.getElementsByClassName("answer-button
 
 
 let qualifyingPoints = 0;
+let countdownDisplay = document.getElementById("countdown-timer");
+let startButton = document.getElementById("start-button");
 let timer = 60;  //document.getElementsByClassName("countdown");
 let startGame = document.getElementsByClassName("button");
 let correctAnswers = 0;
@@ -16,7 +18,7 @@ let totalQuestions = document.getElementById("question-counter");
 let score = document.getElementById("correct-score");
 let maxQuestions = 9;
 
-
+/*
 //  window.addEventListener("DOMContentLoaded", function() {
 //      let buttons = document.getElementsByTagName("button");
 
@@ -33,7 +35,7 @@ let maxQuestions = 9;
 //          });
 //      }
 //  });
-
+*/
 /*when "start new game - kick off" button clicked*/
 
 function newgame() {
@@ -42,6 +44,7 @@ function newgame() {
     questionsArray = [...quizQuestions];
     console.log(questionsArray);
     displayNewQuestion();
+    countDown ();
 
 }
 
@@ -97,6 +100,17 @@ selectedAnswer.forEach(choice => {
 });
 
 
+function countDown () {
+    setInterval(function(){
+        if (timer <= 0) {
+            clearInterval(timer = 0)
+        }
+        countdownDisplay.innerHTML = timer
+        timer -= 1
+        
+    }, 1000)
+}
+
 
 
 function gameOver() {
@@ -122,3 +136,7 @@ function qualifyingPointsScore () {
 function progressToKnockout () {
 
 }
+
+
+    
+
