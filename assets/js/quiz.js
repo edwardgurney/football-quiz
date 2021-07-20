@@ -14,7 +14,7 @@ let questionCounter = 0;
 let questionArea = document.getElementById("question");
 let questionsArray = [];
 let currentQuestion = {};
-let totalQuestions = document.getElementById("question-counter");
+let totalQuestions = 0; //document.getElementById("question-counter");
 let score = document.getElementById("correct-score");
 let maxQuestions = 9;
 
@@ -45,6 +45,7 @@ function newgame() {
     console.log(questionsArray);
     displayNewQuestion();
     countDown ();
+    //totalQuestionsCounter ();
 
 }
 
@@ -58,6 +59,7 @@ function displayNewQuestion() {
         return window.location.assign("index.html");
     }
     questionCounter++;
+    totalQuestionsCounter ();
     const questionsAvailable = Math.floor(Math.random() * questionsArray.length);
     currentQuestion = questionsArray[questionsAvailable];
     question.innerText = currentQuestion.question;
@@ -130,6 +132,11 @@ function incorrectScore () {
 function qualifyingPointsScore () {
     qualifyingPoints += 3;
     document.getElementById("qualifying-points").innerText = qualifyingPoints;
+}
+
+function totalQuestionsCounter () {
+    totalQuestions += 1;
+    document.getElementById("question-counter").innerText = totalQuestions;
 }
 
 
