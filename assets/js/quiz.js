@@ -45,6 +45,7 @@ function newgame() {
     console.log(questionsArray);
     displayNewQuestion();
     countDown ();
+
     //totalQuestionsCounter ();
 
 }
@@ -58,8 +59,19 @@ function displayNewQuestion() {
         
         return window.location.assign("index.html");
     }
+
     questionCounter++;
-    totalQuestionsCounter ();
+    totalQuestionsCounter();
+
+    if (totalQuestions == 7 && qualifyingPoints >= 12) {
+        alert("You qualified for the knockout stage")
+    } else if (totalQuestions == 7 && qualifyingPoints < 12) {
+        alert("You haven't qualified for the next round, try again")
+    }
+
+
+
+
     const questionsAvailable = Math.floor(Math.random() * questionsArray.length);
     currentQuestion = questionsArray[questionsAvailable];
     question.innerText = currentQuestion.question;
@@ -69,8 +81,9 @@ function displayNewQuestion() {
         choice.innerText = currentQuestion['choice' + number];
     });
     questionsArray.splice(questionsAvailable, 1);
-    
+
 };
+
 
 
 selectedAnswer.forEach(choice => {
@@ -85,8 +98,15 @@ selectedAnswer.forEach(choice => {
             classToApply = 'correct-answer';
         } else {
             incorrectScore();
+        }   
+
+
             /*selectedChoice.parentElement.classList.add(classToApply);*/
-        }
+        
+          //else {
+            //gameOver()
+        //}
+       /* if (totalQuestions > 6 && totalQuestions <= 9 && incorrectAnswers)*/
 
         console.log(selectedAnswer == currentQuestion.answer);
 
@@ -102,6 +122,11 @@ selectedAnswer.forEach(choice => {
 });
 
 
+//function qualified() {
+
+//};
+
+
 function countDown () {
     setInterval(function(){
         if (timer <= 0) {
@@ -115,14 +140,17 @@ function countDown () {
 
 
 
-function gameOver() {
 
-}
+//function gameOver() {
+//    alert=("youlost.html")
+
+//}
 
 function correctScore () {
     correctAnswers++;
     document.getElementById("correct-score").innerText = correctAnswers;
 }
+
 
 function incorrectScore () {
     incorrectAnswers++;
