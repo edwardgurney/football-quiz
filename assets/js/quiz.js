@@ -120,12 +120,12 @@ function gameOver() {
 }
 
 function correctScore () {
-    correctAnswers += 1;
+    correctAnswers++;
     document.getElementById("correct-score").innerText = correctAnswers;
 }
 
 function incorrectScore () {
-    incorrectAnswers += 1;
+    incorrectAnswers++;
     document.getElementById("incorrect-score").innerText = incorrectAnswers;
 }
 
