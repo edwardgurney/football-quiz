@@ -10,7 +10,7 @@ let startButton = document.getElementById("start-button");
 let questionsArray = [];
 let currentQuestion = {};
 let qualifyingPoints = 0;
-let timer = 60;
+let timer = 5;
 let correctAnswers = 0;
 let incorrectAnswers = 0;
 let questionCounter = 0;
@@ -81,7 +81,7 @@ function checkAnswer(e) {
         return window.location.assign("youlost.html");
     }
 
-    if (totalQuestions > 6 && parseInt(selectedAnswer) !== currentQuestion.answer) {
+    if (totalQuestions > 6 && parseInt(selectedAnswer) !== currentQuestion.answer) { 
         return window.location.assign("kolost.html");
     }
 
@@ -96,13 +96,13 @@ function checkAnswer(e) {
         displayNewQuestion();
     }, 1500);
 }
-
+typeof selectedAnswer, typeof currentQuestion.answer
 // countdown timer
 function countDown() {
     setInterval(function () {
         if (timer <= 0) {
             clearInterval(timer = 0)
-        }
+            return window.location.assign("time.html");}
         countdownDisplay.innerHTML = timer
         timer -= 1
 
