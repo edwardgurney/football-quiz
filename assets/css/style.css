@@ -183,3 +183,28 @@ body {
 .incorrect-answer {
     background-color: crimson;
 }
+
+@media (max-width: 700px) {
+    .game-area{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr;
+        grid-gap: .5%;
+        padding: 0rem;
+        margin: 0rem;
+
+    }
+
+    .answer-button {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr;
+        padding: 1rem;
+        margin: 1rem;
+        border: 0.2rem solid;
+        background-color:cornsilk;
+        margin-top: 1rem;
+    }
+
+
+}
