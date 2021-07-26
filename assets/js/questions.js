@@ -99,7 +99,7 @@ const quizQuestions = [
     },
 
     {
-        question: "How many times had David Moyes won the prestigious LMA Manager of the year award?",
+        question: "How many times has David Moyes won the prestigious LMA Manager of the year award?",
         choice1: "1",
         choice2: "2",
         choice3: "3",   
