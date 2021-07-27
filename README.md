@@ -1,15 +1,60 @@
-Football Quiz:
+# **Football Quiz**
+
+### *You can view the live project here: [Football Quiz](https://edwardgurney.github.io/football-quiz/)*
+<br>
 
 This football quiz is for football fans to test their knowledge of football. There are a whole host of questions about the Premier League and its clubs, the Champions League the World Cup and European Cup.
 
 The game has been designed to mimic the structure of a football tournament, for example, the World Cup or the Champions League. 
 
-This means the first round is based on the group stages, where there will be 6 questions (one question to be the equivalent to 1 match). For every correct question the user will score three points. In order to progress to the knockout stages of the tournament, the user needds to achieve 9 points (3 correct answers).
+This means the first round is based on the group stages, where there will be 6 questions (one question to be the equivalent to 1 match). For every correct question the user will score three points. In order to progress to the knockout stages of the tournament, the user needds to achieve 12 points (4 correct answers).
 
-The next stage of the game will be the knockout stage, if you give an incorrect answer, then you are out. There are 3 knockout questions, which is the equivalent to the quarter final, semi final and then final. 
+The next stage of the game will be the knockout stage, if you give an incorrect answer, then you are out. There are 3 knockout questions, which is the equivalent to the quarter final, semi final and then final. If you answer questions 7, 8 and 9 correctly, you win the game. 
+<img src="/workspace/football-quiz/assets/images/readme-images/AmIResponsive shot.png" width="1200">
 
 
-User Stories:
+
+## **User Experience**
+
+
+  ### **User Stories**
+
+ - *First Time User Goals*<br>
+    1. Easy to understand on the landing page so the user understands the rules as quickly as possible.
+    2. For the quiz to be fun where I can score points realted to football questions.
+    3. To start playing the game quickly without having to fill out any information.
+    4. I'd like to know when I get an answer correct or incorrect and have a total score.
+
+
+
+ - *Returning User Goals*<br>
+    1. Easy to get to the game quickly.
+    2. I want to see if I can improve my score.
+    3. I want to have different questions at random so I don;t have the same questions all the time.
+
+ - *Repeat User Goals*<br>
+    1. To see if I can win the game in record time.
+    2. To get the first two questions wrong and see if I Can still win the game.
+
+## **Design**
+
+  ### **Color Scheme**
+
+  ### **Typography**
+
+  ### **Imagery**
+
+  ## **Wireframes**
+
+
+## **Features**
+
+
+
+
+
+
+
 
 
 Features:

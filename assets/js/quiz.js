@@ -1,11 +1,11 @@
 const question = document.getElementById("question");
 const selectedAnswer = Array.from(document.getElementsByClassName("answer-button"));
-let startGame = document.getElementsByClassName("button");
-let questionArea = document.getElementById("question");
-let answerButtons = document.getElementsByClassName("answer-button");
+//let startGame = document.getElementsByClassName("button");
+//let questionArea = document.getElementById("question");
+//let answerButtons = document.getElementsByClassName("answer-button");
 let score = document.getElementById("correct-score");
 let countdownDisplay = document.getElementById("countdown-timer");
-let startButton = document.getElementById("start-button");
+//let startButton = document.getElementById("start-button");
 
 let questionsArray = [];
 let currentQuestion = {};
@@ -33,8 +33,8 @@ newgame();
 function setEventListeners() {
     selectedAnswer.forEach(choice => {
         choice.addEventListener("click", (e) => checkAnswer(e));
-    })
-};
+    });
+}
 
 // displays a new question
 function displayNewQuestion() {
@@ -53,17 +53,17 @@ function displayNewQuestion() {
     });
 
     questionsArray.splice(questionsAvailable, 1);
-};
+}
 
 // check the current answer
 function checkAnswer(e) {
     const selectedChoice = e.target;
-    const selectedAnswer = selectedChoice.dataset["number"];
+    const selectedAnswer = selectedChoice.dataset.number;
 
     let classToApply = 'incorrect-answer';
 
     if (selectedAnswer == currentQuestion.answer) {
-        totalQuestionsCounter()
+        totalQuestionsCounter();
         qualifyingPointsScore();
         correctScore();
         classToApply = 'correct-answer';
@@ -96,17 +96,17 @@ function checkAnswer(e) {
         displayNewQuestion();
     }, 1500);
 }
-typeof selectedAnswer, typeof currentQuestion.answer
+typeof selectedAnswer, typeof currentQuestion.answer;
 // countdown timer
 function countDown() {
     setInterval(function () {
         if (timer <= 0) {
-            clearInterval(timer = 0)
+            clearInterval(timer = 0);
             return window.location.assign("time.html");}
-        countdownDisplay.innerHTML = timer
-        timer -= 1
+        countdownDisplay.innerHTML = timer;
+        timer -= 1;
 
-    }, 1000)
+    }, 1000);
 }
 
 // increments the correct score

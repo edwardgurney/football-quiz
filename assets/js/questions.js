@@ -54,7 +54,7 @@ const quizQuestions = [
     },
 
     {
-        question: "England won the World Cup in 1966, but which club did the goalscorers that day (Martin Peters and Geoff Hurst) play for?",
+        question: "England won the 1966 World Cup, which club did the goalscorers that day (Martin Peters and Geoff Hurst) play for?",
         choice1: "Leeds",
         choice2: "Arsenal",
         choice3: "Chelsea",  
@@ -81,7 +81,7 @@ const quizQuestions = [
     },
 
     {
-        question: "Denmark beat all the odds and won Euro 92, but they did not even initially qualify, who did they replace to enter the tournament?",
+        question: "Denmark beat all odds to win Euro 92, but they did not even initially qualify, who did they replace to enter the tournament?",
         choice1: "Croatia",
         choice2: "Yugoslavia",
         choice3: "Norway",    

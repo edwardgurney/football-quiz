@@ -101,10 +101,6 @@ body {
     
 }
 
-#questions-area {
-    padding: 10;
-    margin: 10;
-}
 
 /*#timer {
     display: flex;
@@ -150,7 +146,7 @@ body {
 
 .answer-button:hover {
     cursor: pointer;
-    color:rgb(212, 18, 132);
+    color:rgb(230, 73, 164);
     transition: transform 150ms;
 }
 
@@ -188,6 +184,7 @@ body {
 
 .incorrect-answer {
     background-color: crimson;
+    
 }
 /* for screens 700px wide and down - tablets and phones */
 @media (max-width: 700px) {
