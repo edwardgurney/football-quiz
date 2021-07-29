@@ -83,7 +83,7 @@ The next stage of the game will be the knockout stage, if you give an incorrect 
 
   - This is losing screen one - Not qualified for the second round.<img src="assets/images/screenshots/You lost.png">
 
-   - This is losing screen two - lost in the knockout stage.<img src="assets/images/screenshots/You lost in KO.png">
+   - This is losing screen two - lost in the knockout stage.<img src="assets/images/screenshots/You lost.png">
 
    - This is the winning screen<img src="assets/images/screenshots/You won.png">
 
