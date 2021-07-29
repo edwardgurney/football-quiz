@@ -2,8 +2,10 @@
     font-size: 62.5%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -41,11 +43,11 @@ body {
 
 #start-game {
     margin-top: 5%;
-    
 }
+
 .button:hover {
     cursor: pointer;
-    color:rgb(212, 18, 132);
+    color:rgb(18, 63, 212);
     transition: transform 150ms;
 }
 /*Button on the homepage*/
@@ -59,7 +61,6 @@ body {
     border: 0.2rem solid;
     background-color: rgba(252, 249, 185, .5);
     
-
 }
 
 /* This is the quiz/game page*/
@@ -77,7 +78,6 @@ body {
     background-color: rgba(252, 249, 185, .5);
     
 }
-
 
 .game-area {
     display: flex;
@@ -100,27 +100,6 @@ body {
     margin: 0;
     
 }
-
-
-/*#timer {
-    display: flex;
-    width: 10vw;
-    height: 10vh;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-#qualifying {
-    display: flex;
-    width: 10vw;
-    height: 10vh;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}*/
 
 .grid-container {
     display: grid;
@@ -146,24 +125,9 @@ body {
 
 .answer-button:hover {
     cursor: pointer;
-    color:rgb(230, 73, 164);
+    color:rgb(18, 63, 212);
     transition: transform 150ms;
 }
-
-
-
-/*.scores-area {
-    padding: 3rem;
-    margin: 0rem;
-    border: 0.2rem solid;
-    background-color:cornsilk;
-    width: 30vw;
-    height: 5vh;
-    text-align: inherit;
-    justify-content: center;
-    align-items: center;
-}
-*/
 
 .scores-container {
     width: 80%;
@@ -180,7 +144,6 @@ body {
 .correct-answer {
     background-color: chartreuse;
 }
-
 
 .incorrect-answer {
     background-color: crimson;
@@ -233,10 +196,10 @@ body {
         border: solid;
         background-color: cornsilk;
     }
+
     .correct-answer {
         background-color: chartreuse;
     }
-    
     
     .incorrect-answer {
         background-color: crimson;
@@ -271,6 +234,5 @@ body {
         margin-top: 5%;
         border: solid;
         background-color: rgba(252, 249, 185, .5);
-    }
-    
+    }  
 }
