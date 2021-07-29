@@ -57,8 +57,8 @@ The next stage of the game will be the knockout stage, if you give an incorrect 
   - Landing page large screens <img src="assets/images/wireframes/Football Quiz - Landing Page.png" width="800"> 
   
   - Game area large screen <img src="assets/images/wireframes/Game Area.png">
-  - Landing page small screens <img src="assets/images/wireframes/Phone - Game Area.png">
-  - Game area small screens <img src="assets/images/wireframes/Phone Layout - Football Quiz Homepage.png">
+  - Landing page small screens <img src="assets/images/wireframes/Phone - Game Area.png" height="750">
+  - Game area small screens <img src="assets/images/wireframes/Phone Layout - Football Quiz Homepage.png" height="750">
 
 
 ## **Features**
@@ -75,17 +75,17 @@ The next stage of the game will be the knockout stage, if you give an incorrect 
 
  Below are screenshots of the game representing some of the features described above:
 
- - The landing page with start button and the rules of the game. <img src="/workspace/football-quiz/assets/images/screenshots/The Rules.png">
+ - The landing page with start button and the rules of the game. <img src="assets/images/screenshots/The Rules.png">
 
- - This is an example of one of the questions with four answer button choices, the game area.<img src="/workspace/football-quiz/assets/images/screenshots/Question Screen.png">
+ - This is an example of one of the questions with four answer button choices, the game area.<img src="assets/images/screenshots/Question Screen.png">
 
-  - This is the timeout screen.<img src="/workspace/football-quiz/assets/images/screenshots/out of time.png">
+  - This is the timeout screen.<img src="assets/images/screenshots/out of time.png">
 
-  - This is losing screen one - Not qualified for the second round.<img src="/workspace/football-quiz/assets/images/screenshots/You lost.png">
+  - This is losing screen one - Not qualified for the second round.<img src="assets/images/screenshots/You lost.png">
 
-   - This is losing screen two - lost in the knockout stage.<img src="/workspace/football-quiz/assets/images/screenshots/You lost in KO.png">
+   - This is losing screen two - lost in the knockout stage.<img src="assets/images/screenshots/You lost in KO.png">
 
-   - This is the winning screen<img src="/workspace/football-quiz/assets/images/screenshots/You won.png">
+   - This is the winning screen<img src="assets/images/screenshots/You won.png">
 
 ## **Features to implement in future**
 
@@ -122,9 +122,9 @@ No issues were identified.
 
 ## **Languages Used** - HTML, CSS, Javascript.
 
-- HTML - W3C validator was used for all HTML pages and no errors were found. Here is an example of the index.html showing no errors. <img src="/workspace/football-quiz/assets/images/readme-images/Screenshot 2021-07-28 at 21.08.50.png">
+- HTML - W3C validator was used for all HTML pages and no errors were found. Here is an example of the index.html showing no errors. <img src="assets/images/readme-images/Screenshot 2021-07-28 at 21.08.50.png">
 
-- CSS - Jigsaw W3C validator was used and no errors were found: <img src="/workspace/football-quiz/assets/images/readme-images/Screenshot 2021-07-28 at 21.12.42.png">
+- CSS - Jigsaw W3C validator was used and no errors were found: <img src="assets/images/readme-images/Screenshot 2021-07-28 at 21.12.42.png">
 
 - Javascript - JSHint was used an *** errors were found. <img src="">
 
@@ -164,7 +164,7 @@ The project was deployed to Githib pages in the following way:
 
    - The background picture for larger screens was from an account called pixabay: https://www.pexels.com/photo/action-ball-field-game-274506/
 
-   - The favicom was taken from [iconarchive.com]("https://iconarchive.com/show/sport-icons-by-martin-berube/Soccer-icon.html").
+   - The favicom was taken from [iconarchive.com]("https://www.iconarchive.com/show/sport-icons-by-martin-berube/Soccer-icon.html")
 
 * Assistance for the timer with Ania Kubow: [Ania Kubow](https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw)
 
