@@ -10,12 +10,10 @@ The game has been designed to mimic the structure of a football tournament, for 
 This means the first round is based on the group stages, where there will be 6 questions (one question to be the equivalent to 1 match). For every correct question the user will score three points. In order to progress to the knockout stages of the tournament, the user needs to achieve 12 points (4 correct answers).
 
 The next stage of the game will be the knockout stage, if you give an incorrect answer, then you are out. There are 3 knockout questions, which is the equivalent to the quarter final, semi final and then final. If you answer questions 7, 8 and 9 correctly, you win the game. 
-<img src="/workspace/football-quiz/assets/images/readme-images/AmIResponsive shot.png" width="1200">
 
-
+<img src="/workspace/football-quiz/assets/images/readme-images/amiresponsiveshot.png" width="1200">
 
 ## **User Experience**
-
 
   ### **User Stories**
 
@@ -29,7 +27,6 @@ The next stage of the game will be the knockout stage, if you give an incorrect 
     2. For the quiz to be fun where I can score points realted to football questions.
     3. To start playing the game quickly without having to fill out any information.
     4. I'd like to know when I get an answer correct or incorrect and have a total score.
-
 
 
  - *Returning User Goals*<br>
@@ -124,9 +121,17 @@ No issues were identified.
 
 - HTML - W3C validator was used for all HTML pages and no errors were found. Here is an example of the index.html showing no errors. <img src="assets/images/readme-images/Screenshot 2021-07-28 at 21.08.50.png">
 
+Below are links to each of the W3C vailidators of the various HTML pages:
+- [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fedwardgurney.github.io%2Ffootball-quiz%2Findex.html),
+- [quiz.html](https://validator.w3.org/nu/?doc=https%3A%2F%2F8000-emerald-dolphin-iubjw25s.ws-eu13.gitpod.io%2Fquiz.html)
+- [time.html](https://validator.w3.org/nu/?doc=https%3A%2F%2F8000-emerald-dolphin-iubjw25s.ws-eu13.gitpod.io%2Ftime.html)
+- [youlost.html](https://8000-emerald-dolphin-iubjw25s.ws-eu13.gitpod.io/youlost.html)
+- [kolost.html](https://8000-emerald-dolphin-iubjw25s.ws-eu13.gitpod.io/kolost.html)
+- [youwon.html](https://validator.w3.org/nu/?doc=https%3A%2F%2F8000-emerald-dolphin-iubjw25s.ws-eu13.gitpod.io%2Fyouwon.html)
+
 - CSS - Jigsaw W3C validator was used and no errors were found: <img src="assets/images/readme-images/Screenshot 2021-07-28 at 21.12.42.png">
 
-- Javascript - JSHint was used an *** errors were found. <img src="">
+- Javascript - JSHint was used an there are no errors. QuizQuestions was identified as an undefined variable on line 20, this is becasue the questions are stored in a seperate file that wasn't availabel to JSHint. <img src="assets/images/readme-images/Screenshot 2021-07-30 at 19.32.27.png">
 
 ## **Frameworks and Programs Used**
 
@@ -144,6 +149,8 @@ No issues were identified.
 ## **Fixed bugs in this version 1**
 
 - On one of the losing screens on iphones the play again button was clashing with the 'you lost' commentary box above it. This was fixed.
+
+- There was a console.log error: Cannot set property 'innertext' of null. this was becasue it was looking for the question counter on the landing page and it didn't exist. It was fixed by adding an if statement within the newgame function. 
 
 ## **Deployment**
 

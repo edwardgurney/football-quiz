@@ -16,9 +16,11 @@ let maxQuestions = 9;
 // new game
 function newgame() {
     questionCounter.innerText = 0;
+    if (score != null) {
+        score.innertext = 0;
+    }
     score.innerText = 0;
     questionsArray = [...quizQuestions];
-    console.log(questionsArray);
     displayNewQuestion();
     countDown();
     setEventListeners();
@@ -64,15 +66,14 @@ function checkAnswer(e) {
         correctScore();
         classToApply = 'correct-answer';
     } 
-    else incorrectScore(), totalQuestionsCounter();
+    else {incorrectScore();
+         totalQuestionsCounter();}
 
     if (totalQuestions == 6 && qualifyingPoints >= 12) {
-        console.log("PLAYER HAS QUALIFIED");
         alert("Congratulations, you have qualified for the knockout stage. One question wrong and you're out - Good Luck");
-       
-    } 
+        }
+
     else if (totalQuestions == 6 && qualifyingPoints < 12) {
-        console.log("PLAYER HAS NOT QUALIFIED -> LOST!");
         return window.location.assign("youlost.html");
     }
 
@@ -91,7 +92,7 @@ function checkAnswer(e) {
         displayNewQuestion();
     }, 1500);
 }
-typeof selectedAnswer, typeof currentQuestion.answer;
+
 // countdown timer
 function countDown() {
     setInterval(function () {
