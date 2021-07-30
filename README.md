@@ -11,7 +11,7 @@ This means the first round is based on the group stages, where there will be 6 q
 
 The next stage of the game will be the knockout stage, if you give an incorrect answer, then you are out. There are 3 knockout questions, which is the equivalent to the quarter final, semi final and then final. If you answer questions 7, 8 and 9 correctly, you win the game. 
 
-<img src="/workspace/football-quiz/assets/images/readme-images/amiresponsiveshot.png" width="1200">
+<img src="assets/images/readme-images/amiresponsiveshot.png" width="1200">
 
 ## **User Experience**
 
@@ -51,11 +51,11 @@ The next stage of the game will be the knockout stage, if you give an incorrect 
 
   ## **Wireframes**
 
-  - Landing page large screens <img src="/workspace/football-quiz/assets/images/wireframes/footballquiz-landingpage.png" width="800">
+  - Landing page large screens <img src="assets/images/wireframes/footballquiz-landingpage.png" width="800">
   
-  - Game area large screen <img src="/workspace/football-quiz/assets/images/wireframes/game-area.png">
-  - Landing page small screens <img src="/workspace/football-quiz/assets/images/wireframes/phone -gamearea.png" height="750">
-  - Game area small screens <img src="/workspace/football-quiz/assets/images/wireframes/phone-footballquizhomepage.png" height="750">
+  - Game area large screen <img src="assets/images/wireframes/game-area.png">
+  - Landing page small screens <img src="assets/images/wireframes/phone -gamearea.png" height="750">
+  - Game area small screens <img src="assets/images/wireframes/phone-footballquizhomepage.png" height="750">
 
 
 ## **Features**
