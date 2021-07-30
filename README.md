@@ -51,11 +51,11 @@ The next stage of the game will be the knockout stage, if you give an incorrect 
 
   ## **Wireframes**
 
-  - Landing page large screens <img src="assets/images/wireframes/Football Quiz - Landing Page.png" width="800"> 
+  - Landing page large screens <img src="/workspace/football-quiz/assets/images/wireframes/footballquiz-landingpage.png" width="800">
   
-  - Game area large screen <img src="assets/images/wireframes/Game Area.png">
-  - Landing page small screens <img src="assets/images/wireframes/Phone - Game Area.png" height="750">
-  - Game area small screens <img src="assets/images/wireframes/Phone Layout - Football Quiz Homepage.png" height="750">
+  - Game area large screen <img src="/workspace/football-quiz/assets/images/wireframes/game-area.png">
+  - Landing page small screens <img src="/workspace/football-quiz/assets/images/wireframes/phone -gamearea.png" height="750">
+  - Game area small screens <img src="/workspace/football-quiz/assets/images/wireframes/phone-footballquizhomepage.png" height="750">
 
 
 ## **Features**
