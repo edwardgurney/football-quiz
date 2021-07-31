@@ -60,7 +60,7 @@ The next stage of the game will be the knockout stage, if you give an incorrect 
   
   - Game area large screen <img src="assets/images/wireframes/game-area.png">
   - Landing page small screens<br> <img src="assets/images/wireframes/phone -gamearea.png" height="750">
-  - Game area small screens <img src="assets/images/wireframes/phone-footballquizhomepage.png" height="750">
+  - Game area small screens<br> <img src="assets/images/wireframes/phone-footballquizhomepage.png" height="750">
 
 
 ## **Features**
