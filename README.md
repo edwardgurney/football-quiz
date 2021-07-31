@@ -5,6 +5,8 @@
 
 This football quiz is for football fans to test their knowledge of football. There are a whole host of questions about the Premier League and its clubs, the Champions League the World Cup and European Cup.
 
+There are limited interactive free football quiz games available on the internet. The idea is for a scalable game that can be improved through improved versions released over time. With enough users the site could even begin to be commercialised, with football brands advertising on the site. 
+
 The game has been designed to mimic the structure of a football tournament, for example, the World Cup or the Champions League. 
 
 This means the first round is based on the group stages, where there will be 6 questions (one question to be the equivalent to 1 match). For every correct question the user will score three points. In order to progress to the knockout stages of the tournament, the user needs to achieve 12 points (4 correct answers).
@@ -21,12 +23,14 @@ The next stage of the game will be the knockout stage, if you give an incorrect 
    1. The goal of the site is to provide a challenging quiz to entertain online users.
    2. For users to want to return and test themselves again.
    3. For the quiz to be a football based quiz scoring points similar to a football tournament. 
+   4. To provide a 'quick fix' to football fans who want to test their knowledge, beat their existing score or even (in a future version) beat their frineds in an online community. 
 
  - *First Time User Goals*<br>
     1. Easy to understand on the landing page so I can understand the rules as quickly as possible.
-    2. For the quiz to be fun where I can score points realted to football questions.
+    2. For the quiz to be fun where I can score points related to football questions.
     3. To start playing the game quickly without having to fill out any information.
     4. I'd like to know when I get an answer correct or incorrect and have a total score.
+    5. To have quick games that I can test myself on when I have a spare few minutes, maybe on the tube, bus or just to kill some time. 
 
 
  - *Returning User Goals*<br>
@@ -72,23 +76,26 @@ The next stage of the game will be the knockout stage, if you give an incorrect 
 
  Below are screenshots of the game representing some of the features described above:
 
- - The landing page with start button and the rules of the game. <img src="assets/images/screenshots/The Rules.png">
+ - The landing page with start button and the rules of the game. <img src="assets/images/screenshots/the-rules.png">
 
- - This is an example of one of the questions with four answer button choices, the game area.<img src="assets/images/screenshots/Question Screen.png">
+ - This is an example of one of the questions with four answer button choices, the game area.<img src="assets/images/screenshots/question-screen.png">
 
-  - This is the timeout screen.<img src="assets/images/screenshots/out of time.png">
+  - This is the timeout screen.<img src="assets/images/screenshots/out-of-time.png">
 
-  - This is losing screen one - Not qualified for the second round.<img src="assets/images/screenshots/You lost.png">
+  - This is losing screen one - Not qualified for the second round.<img src="assets/images/screenshots/you-lost.png">
 
-   - This is losing screen two - lost in the knockout stage.<img src="assets/images/screenshots/You lost.png">
+   - This is losing screen two - lost in the knockout stage.<img src="assets/images/screenshots/you-lost-in-ko.png">
 
-   - This is the winning screen<img src="assets/images/screenshots/You won.png">
+   - This is the winning screen<img src="assets/images/screenshots/you-won.png">
 
 ## **Features to implement in future**
 
  - Showing the user the correct asnwer when they get the question incorrect so that it is a learning experience.
  - Sound clips of cheering when the game is won and a final whistle audio clip when out of time. 
  - Enter team name or user name and have a scoreboard to track score and creates a league table format scoring system. 
+ - A screen congratulating the user for qualifying for the next stage of the quiz and a button for the user to click to start the next stage - to replace the alert. The alert is not the best UX.
+ - 100's of questions to be added so that the likliehood of questions being asked again is reduced.
+
 
 ## **Testing**
 
@@ -119,7 +126,7 @@ No issues were identified.
 
 ## **Languages Used** - HTML, CSS, Javascript.
 
-- HTML - W3C validator was used for all HTML pages and no errors were found. Here is an example of the index.html showing no errors. <img src="assets/images/readme-images/Screenshot 2021-07-28 at 21.08.50.png">
+- HTML - W3C validator was used for all HTML pages and no errors were found. Here is an example of the index.html showing no errors. <img src="assets/images/readme-images/Screenshot2021-07-28at21.08.50.png">
 
 Below are links to each of the W3C vailidators of the various HTML pages:
 - [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fedwardgurney.github.io%2Ffootball-quiz%2Findex.html),
@@ -129,9 +136,9 @@ Below are links to each of the W3C vailidators of the various HTML pages:
 - [kolost.html](https://8000-emerald-dolphin-iubjw25s.ws-eu13.gitpod.io/kolost.html)
 - [youwon.html](https://validator.w3.org/nu/?doc=https%3A%2F%2F8000-emerald-dolphin-iubjw25s.ws-eu13.gitpod.io%2Fyouwon.html)
 
-- CSS - Jigsaw W3C validator was used and no errors were found: <img src="assets/images/readme-images/Screenshot 2021-07-28 at 21.12.42.png">
+- CSS - Jigsaw W3C validator was used and no errors were found: <img src="assets/images/readme-images/Screenshot2021-07-28at21.12.42.png">
 
-- Javascript - JSHint was used an there are no errors. QuizQuestions was identified as an undefined variable on line 20, this is becasue the questions are stored in a seperate file that wasn't availabel to JSHint. <img src="assets/images/readme-images/Screenshot 2021-07-30 at 19.32.27.png">
+- Javascript - JSHint was used an there are no errors. QuizQuestions was identified as an undefined variable on line 20, this is becasue the questions are stored in a seperate file that wasn't availabel to JSHint. <img src="assets/images/readme-images/Screenshot2021-07-30at19.32.27.png">
 
 ## **Frameworks and Programs Used**
 
@@ -148,9 +155,9 @@ Below are links to each of the W3C vailidators of the various HTML pages:
 
 ## **Fixed bugs in this version 1**
 
-- On one of the losing screens on iphones the play again button was clashing with the 'you lost' commentary box above it. This was fixed.
+- On one of the losing screens on iphones the play again button was clashing with the 'you lost' commentary box above it. This was fixed by chaning the sizes to the box model, these changes did not impact upon UX on Android devices.
 
-- There was a console.log error: Cannot set property 'innertext' of null. this was becasue it was looking for the question counter on the landing page and it didn't exist. It was fixed by adding an if statement within the newgame function. 
+- There was a console.log error: Cannot set property 'innertext' of null. This was becasue it was looking for the question counter on the landing page and it didn't exist. It was fixed by adding an if statement within the newgame function. 
 
 ## **Deployment**
 
